@@ -26,13 +26,9 @@ class Producto {
     }
     cargo = true;
     cant = imgs.size();
-    frame = 0;
+    frame = cant/2;
   }
   void update() {
-    /*
-    frame++;
-    frame%=cant;
-    */
     mover(vel);
     vel *= 0.85;
     draw();
